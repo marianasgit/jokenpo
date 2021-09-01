@@ -26,21 +26,35 @@ public class Jokenpo {
 		System.out.println();
 		leitor.close();
 		
-		System.out.println("A opção escolhida pelo máquina foi: " + valorSorteado);
+		if (valorJogador == 1) {
+			System.out.println("Você escolheu: Pedra");
+		} else if (valorJogador == 2) {
+			System.out.println("Você escolheu: Papel");
+		} else {
+			System.out.println("Você escolheu: Tesoura");
+		}
+		
+		if (valorSorteado == 1) {
+			System.out.println("A escolha do computador foi: Pedra");
+		} else if (valorSorteado == 2) {
+			System.out.println("A escolha do computador foi: Papel");
+		} else {
+			System.out.println("A escolha do computador foi: Tesoura");
+		}
 		System.out.println();
 		
 		if (valorSorteado == 1 && valorJogador == 2) {
 			System.out.println("Você venceu!");
 		} else if (valorSorteado == 1 && valorJogador == 3) {
-			System.out.println("A máquina venceu!");
+			System.out.println("O computador venceu!");
 		} else if (valorSorteado == 2 && valorJogador == 1) {
-			System.out.println("A máquina venceu!");
+			System.out.println("O computador venceu!");
 		} else if (valorSorteado == 2 && valorJogador == 3) {
 			System.out.println("Você venceu!");
 		} else if (valorSorteado == 3 && valorJogador == 1) {
 			System.out.println("Você venceu!");
 		} else if (valorSorteado == 3 && valorJogador == 2) {
-			System.out.println("A máquina venceu!");
+			System.out.println("O computador venceu!");
 		} else {
 			System.out.println("Empate!");
 		}
