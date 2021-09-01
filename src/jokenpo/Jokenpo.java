@@ -15,6 +15,7 @@ public class Jokenpo {
 		int valorJogador;
 		
 		System.out.println("******J O K E N P Ô******");
+		System.out.println();
 		System.out.println("Escolha entre as opções: ");
 		System.out.println("1 - Pedra");
 		System.out.println("2 - Papel");
@@ -41,6 +42,7 @@ public class Jokenpo {
 		} else {
 			System.out.println("A escolha do computador foi: Tesoura");
 		}
+		
 		System.out.println();
 		
 		if (valorSorteado == 1 && valorJogador == 2) {
